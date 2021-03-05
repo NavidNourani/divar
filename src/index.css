@@ -1,40 +1,39 @@
 @font-face {
- font-family: 'Vazir';
- src: local('Vazir'), url(./font-vazir/Vazir.woff) format('woff');
+    font-family: 'Vazir';
+    src: local('Vazir'), url(./font-vazir/Vazir.woff) format('woff');
 }
 
 *,
 *::before,
 *::after {
- margin: 0;
- padding: 0;
- box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
 }
 
 html {
- font-size: 62.5%;
-
+    font-size: 62.5%;
 }
 
 body {
- box-sizing: border-box;
- font-family: 'Vazir';
- min-width: 320px;
- font-weight: 700;
- line-height: 1.4285em;
- font-size: 1rem;
- color: rgba(0, 0, 0, .87);
- background: #fff;
- overflow-x: hidden;
+    box-sizing: border-box;
+    font-family: 'Vazir';
+    min-width: 320px;
+    font-weight: 700;
+    line-height: 1.4285em;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.87);
+    background: #fff;
+    overflow-x: hidden;
 }
 
 a {
- display: inline-block;
- text-decoration: none;
- color: inherit;
- cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
 }
 
 ul {
- list-style: none;
+    list-style: none;
 }
