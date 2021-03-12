@@ -3,6 +3,14 @@
     src: local('Vazir'), url(./font-vazir/Vazir.woff) format('woff');
 }
 
+:root {
+    --bg-clr-main: #fff;
+    --border-main: 1px solid rgba(34, 36, 38, 0.15);
+    --font-clr-primary: rgba(0, 0, 0, 0.86);
+    --font-clr-secondary: rgba(0, 0, 0, 0.56);
+    --bg-clr-hover: rgba(0, 0, 0, 0.2);
+    --box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.2);
+}
 *,
 *::before,
 *::after {
@@ -36,4 +44,8 @@ a {
 
 ul {
     list-style: none;
+}
+
+img {
+    width: 100%;
 }
