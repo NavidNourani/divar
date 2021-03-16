@@ -6,7 +6,7 @@
 :root {
     --bg-clr-main: #fff;
     --border-main: 1px solid rgba(34, 36, 38, 0.15);
-    --font-clr-primary: rgba(0, 0, 0, 0.86);
+    --font-clr-primary: rgba(0, 0, 0, 0.87);
     --font-clr-secondary: rgba(0, 0, 0, 0.56);
     --bg-clr-hover: rgba(0, 0, 0, 0.2);
     --box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.2);
@@ -28,9 +28,9 @@ body {
     font-family: 'Vazir';
     min-width: 320px;
     font-weight: 700;
-    line-height: 1.4285em;
+    line-height: 1.7;
     font-size: 1rem;
-    color: rgba(0, 0, 0, 0.87);
+    color: var(--font-clr-primary);
     background: #fff;
     overflow-x: hidden;
 }

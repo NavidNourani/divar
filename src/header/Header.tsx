@@ -5,10 +5,12 @@ import MenuLink from './MenuLink';
 import styled from 'styled-components';
 
 const Headerstyle = styled.header`
-    background-color: var(--bg-clr-main);
     width: 100%;
     height: 5.5rem;
+    position: fixed;
+    background-color: var(--bg-clr-main);
     border-bottom: var(--border-main);
+    z-index: 100;
 `;
 const NavBar = styled.nav`
     padding: 0 2rem;

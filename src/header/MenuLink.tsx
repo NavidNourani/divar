@@ -5,7 +5,6 @@ import { Link as LinkRouter } from 'react-router-dom';
 const MenuBox = styled.div<{ MenuHumburger?: boolean }>`
     display: flex;
     flex-direction: ${(props) => (props.MenuHumburger ? 'column' : 'row')};
-
     background-color: ${(props) => (props.MenuHumburger ? 'var(--bg-clr-main)' : null)};
     border: ${(props) => (props.MenuHumburger ? 'var(--border-main)' : null)};
     border-radius: ${(props) => (props.MenuHumburger ? '.3rem' : null)};
