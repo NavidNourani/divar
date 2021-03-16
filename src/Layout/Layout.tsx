@@ -12,14 +12,14 @@ import { BrowserRouter } from 'react-router-dom';
 
 const Layout: React.FunctionComponent = () => {
     return (
-        <div>
+        <Box>
             <BrowserRouter>
                 <Header />
                 <Box padding="5rem"></Box>
                 <Main />
                 <Aside />
             </BrowserRouter>
-        </div>
+        </Box>
     );
 };
 

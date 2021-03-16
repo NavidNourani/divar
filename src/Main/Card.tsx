@@ -1,9 +1,15 @@
 import React from 'react';
-import Box from '@material-ui/core/Box';
-import { Link } from 'react-router-dom';
-import { makeStyles } from '@material-ui/core/styles';
+//components
 import Picture from './Picture';
-import styled from 'styled-components';
+
+// Material Components
+import Box from '@material-ui/core/Box';
+import { Link as LinkMui } from '@material-ui/core';
+import { makeStyles, Theme } from '@material-ui/core/styles';
+
+// React-router-dom
+import { Link as LinkRouter } from 'react-router-dom';
+import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
     PostCardBox: {
@@ -37,41 +43,47 @@ const useStyles = makeStyles({
         justifyContent: 'space-between',
         paddingLeft: '1rem',
     },
+    title: {
+        fontWeight: 700,
+        fontSize: '1.3rem',
+        height: '5.6rem',
+        overflowWrap: 'break-word',
+        overflow: 'hidden',
+    },
+    description: {
+        fontWeight: 500,
+        fontSize: '1.2rem',
+        color: 'var(--font-clr-secondary)',
+    },
 });
-
-const Title = styled.h1`
-    font-weight: 700;
-    font-size: 1.3rem;
-    height: 5.6rem;
-    overflow-wrap: break-word;
-    overflow: hidden;
-`;
-const Description = styled.p`
-    font-weight: 500;
-    font-size: 1.2rem;
-    color: var(--font-clr-secondary);
-`;
 
 const Card: React.FunctionComponent = ({ children }) => {
     const classes = useStyles();
     return (
         <>
-            {/* <Link> */}
-            <Box className={classes.PostCardBox}>
-                <Box className={classes.postCard}>
-                    <Box className={classes.cardBody}>
-                        <Title>ماشین لباسشویی اشین لباسشویی اشین لباسشویی </Title>
-                        <Box>
-                            <Description>قیمت: 250 هزار تومن</Description>
-                            <Description>تهرانسر</Description>
+            <LinkMui component={LinkRouter} to="/">
+                <Box className={classes.PostCardBox}>
+                    <Box className={classes.postCard}>
+                        <Box className={classes.cardBody}>
+                            <Typography component="h3" className={classes.title}>
+                                ماشین لباسشویی اشین لباسشویی اشین لباسشویی
+                            </Typography>
+                            <Box>
+                                <Typography
+                                    component="h5"
+                                    className={classes.description}
+                                >
+                                    قیمت: 250 هزار تومن
+                                </Typography>
+                                <Typography component="h5">تهرانسر</Typography>
+                            </Box>
+                        </Box>
+                        <Box className={classes.cardThumbnail}>
+                            <Picture />
                         </Box>
                     </Box>
-                    <Box className={classes.cardThumbnail}>
-                        <Picture />
-                    </Box>
                 </Box>
-            </Box>
-            {/* </Link> */}
+            </LinkMui>
         </>
     );
 };

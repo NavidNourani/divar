@@ -17,19 +17,19 @@ const LinkHeader: React.FunctionComponent<MenuProps> = (props) => {
 
     return (
         <>
-            <LinkMui to="/" component={LinkRouter} className={classes.linkHeader}>
+            <LinkMui component={LinkRouter} to="/" className={classes.linkHeader}>
                 دیوار من
             </LinkMui>
-            <LinkMui to="/" component={LinkRouter} className={classes.linkHeader}>
+            <LinkMui component={LinkRouter} to="/" className={classes.linkHeader}>
                 چت
             </LinkMui>
-            <LinkMui to="/" component={LinkRouter} className={classes.linkHeader}>
+            <LinkMui component={LinkRouter} to="/" className={classes.linkHeader}>
                 درباره‌ی دیوار
             </LinkMui>
-            <LinkMui to="/" component={LinkRouter} className={classes.linkHeader}>
+            <LinkMui component={LinkRouter} to="/" className={classes.linkHeader}>
                 بلاگ
             </LinkMui>
-            <LinkMui to="/" component={LinkRouter} className={classes.linkHeader}>
+            <LinkMui component={LinkRouter} to="/" className={classes.linkHeader}>
                 پشتیانی
             </LinkMui>
         </>
